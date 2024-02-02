@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+
+if [ $# -ne 1 ]; then
+    echo "Error: Please enter a word to search"
+    exit 1
+fi
+
+nvim $(
+    rg -w "$1" -g '!{lazy-lock.json,node_modules}' -n |
+    fzf --preview-label=" Preview " --preview "bat --color=always -n --line-range=\$(( (\$(echo {2}) < 10) ? 1 : \$(echo {2})-10 )):\$((\$(echo {2})+10)) {1}" --delimiter=: |
+    awk -F ":" '{print "+"$2" "$1}'
+) -c "norm zz"

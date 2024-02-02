@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+if [ $# -eq 0 ]; then
+    dir=.
+else
+    dir=$1
+fi
+
+find "$dir" -maxdepth 1 -type d \( ! -iname ".*" \) -printf '%P\n' | sed "1 i..\\n." | fzf --preview "echo {} && ls --color=always {}"
