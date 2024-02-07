@@ -18,8 +18,8 @@ curl -LO https://github.com/neovim/neovim/releases/download/v0.9.5/nvim-linux64.
 tar -xzvf nvim-linux64.tar.gz
 
 # Go
-curl -LO https://golang.org/dl/go1.21.6.linux-amd64.tar.gz
-sudo rm -rf /usr/local/go && sudo tar -C /usr/local -xzf go1.21.6.linux-amd64.tar.gz
+curl -LO https://golang.org/dl/go1.22.0.linux-amd64.tar.gz
+sudo rm -rf /usr/local/go && sudo tar -C /usr/local -xzf go1.22.0.linux-amd64.tar.gz
 
 # Rust
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
