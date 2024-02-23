@@ -42,3 +42,4 @@ go install github.com/a-h/templ/cmd/templ@latest
 cargo install fend
 cargo install tokei
 cargo install ocrs-cli
+cargo install zoxide --locked

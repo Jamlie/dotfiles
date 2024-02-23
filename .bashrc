@@ -120,6 +120,7 @@ export PATH=$PATH:$HOME/nvim-linux64/bin
 export PATH=$PATH:$HOME/.bin
 export PATH=$PATH:$HOME/slct
 export PATH=$PATH:$HOME/fs
+export PATH=$PATH:$HOME/.config/composer/vendor/bin
 . "$HOME/.cargo/env"
 
 export NVM_DIR="$HOME/.nvm"
@@ -130,3 +131,6 @@ alias cobra="cobra-cli"
 # alias chs='cd "$(fd -t d -d 1| sed "1 i..\\n." | fzf)"'
 alias chs='cd "$(fs)"'
 alias tchs='cd "$(fd -t d -d 1 | sed "1 i..\\n." | fzf)" && tmux'
+
+# man page
+export MANPAGER="sh -c 'col -bx | bat -l man -p'"
