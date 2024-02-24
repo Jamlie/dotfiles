@@ -29,6 +29,10 @@ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
 nvm install node
 
 # Packages
+sudo apt install ffmpegthumbnailer -y
+sudo apt install ffmpeg -y
+sudo apt install unar -y
+sudo apt install poppler-utils -y
 sudo apt install tmux -y
 sudo apt install ripgrep -y
 sudo apt install fd-find -y
@@ -43,3 +47,4 @@ cargo install fend
 cargo install tokei
 cargo install ocrs-cli
 cargo install zoxide --locked
+cargo install --locked yazi-fm

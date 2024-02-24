@@ -134,3 +134,5 @@ alias tchs='cd "$(fd -t d -d 1 | sed "1 i..\\n." | fzf)" && tmux'
 
 # man page
 export MANPAGER="sh -c 'col -bx | bat -l man -p'"
+eval "$(zoxide init bash)"
+alias cd="z"
