@@ -59,3 +59,5 @@ cargo install tokei
 cargo install ocrs-cli
 cargo install zoxide --locked
 cargo install --locked yazi-fm
+
+bat cache --build
