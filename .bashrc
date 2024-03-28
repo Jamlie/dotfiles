@@ -136,3 +136,7 @@ alias tchs='cd "$(fd -t d -d 1 | sed "1 i..\\n." | fzf)" && tmux'
 export MANPAGER="sh -c 'col -bx | bat -l man -p'"
 eval "$(zoxide init bash)"
 alias cd="z"
+
+export WASMTIME_HOME="$HOME/.wasmtime"
+
+export PATH="$WASMTIME_HOME/bin:$PATH"

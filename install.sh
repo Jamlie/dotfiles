@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 # Update
 sudo apt update -y && sudo apt upgrade -y
 
@@ -17,6 +19,11 @@ sudo apt install coreutils -y
 curl -LO https://github.com/neovim/neovim/releases/download/v0.9.5/nvim-linux64.tar.gz
 tar -xzvf nvim-linux64.tar.gz
 
+# install Jamlie/nvim
+mv ~/.config/nvim ~/.config/nvim.bak
+mv ~/.local/share/nvim ~/.local/share/nvim.bak
+git clone https://github.com/Jamlie/nvim.git ~/.config/nvim
+
 # Go
 curl -LO https://golang.org/dl/go1.22.0.linux-amd64.tar.gz
 sudo rm -rf /usr/local/go && sudo tar -C /usr/local -xzf go1.22.0.linux-amd64.tar.gz
@@ -28,7 +35,11 @@ curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
 nvm install node
 
+# Wasmtime
+curl https://wasmtime.dev/install.sh -sSf | bash
+
 # Packages
+sudo apt install dos2unix -y
 sudo apt install ffmpegthumbnailer -y
 sudo apt install ffmpeg -y
 sudo apt install unar -y
