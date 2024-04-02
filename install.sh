@@ -51,6 +51,11 @@ sudo apt install bat -y
 sudo apt install lsd -y
 sudo apt install fzf -y
 sudo apt install lazygit -y
+sudo apt install lua5.3 -y
+sudo apt install python3 -y
+sudo apt install python3-pip -y
+sudo apt install luarocks -y
+sudo luarocks install luv
 go install github.com/spf13/cobra-cli@latest
 go install github.com/melkeydev/go-blueprint@latest
 go install github.com/a-h/templ/cmd/templ@latest
@@ -59,5 +64,6 @@ cargo install tokei
 cargo install ocrs-cli
 cargo install zoxide --locked
 cargo install --locked yazi-fm
+cargo install stylua
 
 bat cache --build
