@@ -121,6 +121,8 @@ export PATH=$PATH:$HOME/.bin
 export PATH=$PATH:$HOME/slct
 export PATH=$PATH:$HOME/fs
 export PATH=$PATH:$HOME/.config/composer/vendor/bin
+export FLYCTL_INSTALL="/home/jam/.fly"
+export PATH="$FLYCTL_INSTALL/bin:$PATH"
 . "$HOME/.cargo/env"
 
 export NVM_DIR="$HOME/.nvm"
@@ -132,6 +134,8 @@ alias cobra="cobra-cli"
 alias chs='cd "$(fs)"'
 alias tchs='cd "$(fd -t d -d 1 | sed "1 i..\\n." | fzf)" && tmux'
 
+alias golint=golangci-lint
+
 # man page
 export MANPAGER="sh -c 'col -bx | bat -l man -p'"
 eval "$(zoxide init bash)"
@@ -140,3 +144,7 @@ alias cd="z"
 export WASMTIME_HOME="$HOME/.wasmtime"
 
 export PATH="$WASMTIME_HOME/bin:$PATH"
+
+
+# Load Angular CLI autocompletion.
+source <(ng completion script)

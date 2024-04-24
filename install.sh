@@ -38,6 +38,9 @@ nvm install node
 # Wasmtime
 curl https://wasmtime.dev/install.sh -sSf | bash
 
+# Go linter
+curl -sSfL https://raw.githubusercontent.com/golangci/golangci-lint/master/install.sh | sh -s -- -b $(go env GOPATH)/bin v1.57.2
+
 # Packages
 sudo apt install dos2unix -y
 sudo apt install ffmpegthumbnailer -y
