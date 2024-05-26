@@ -114,12 +114,14 @@ fi
 
 export PATH=$PATH:/usr/local/go/bin
 export PATH=$PATH:$HOME/go/bin
+export PATH=$PATH:$HOME/.zig
 export PATH=$PATH:$HOME/vmrss
 export PATH=$PATH:$HOME/sqlite3
 export PATH=$PATH:$HOME/nvim-linux64/bin
 export PATH=$PATH:$HOME/.bin
 export PATH=$PATH:$HOME/slct
 export PATH=$PATH:$HOME/fs
+export PATH=$PATH:$HOME/tmux-sessionizer
 export PATH=$PATH:$HOME/.config/composer/vendor/bin
 export FLYCTL_INSTALL="/home/jam/.fly"
 export PATH="$FLYCTL_INSTALL/bin:$PATH"
@@ -135,6 +137,7 @@ alias chs='cd "$(fs)"'
 alias tchs='cd "$(fd -t d -d 1 | sed "1 i..\\n." | fzf)" && tmux'
 
 alias golint=golangci-lint
+alias tx=tmux-sessionizer
 
 # man page
 export MANPAGER="sh -c 'col -bx | bat -l man -p'"
