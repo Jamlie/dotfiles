@@ -119,6 +119,7 @@ export PATH=$PATH:$HOME/slct
 export PATH=$PATH:$HOME/tmux-sessionizer
 export PATH=$PATH:$HOME/fs
 export PATH=$PATH:$HOME/.config/composer/vendor/bin
+export PATH=$PATH:$HOME/swift/usr/bin
 export FLYCTL_INSTALL="/home/jam/.fly"
 export PATH="$FLYCTL_INSTALL/bin:$PATH"
 . "$HOME/.cargo/env"
@@ -147,3 +148,4 @@ export PATH="$WASMTIME_HOME/bin:$PATH"
 
 # Load Angular CLI autocompletion.
 source <(ng completion script)
+source <(fzf --zsh)
