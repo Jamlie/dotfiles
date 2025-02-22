@@ -3,6 +3,9 @@
 # Update
 sudo apt update -y && sudo apt upgrade -y
 
+# Unzip
+sudo apt install unzip -y
+
 # Git
 sudo apt install git -y
 
@@ -32,8 +35,11 @@ sudo rm -rf /usr/local/go && sudo tar -C /usr/local -xzf go1.23.0.linux-amd64.ta
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 
 # nvm & nodejs & npm
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.1/install.sh | bash
 nvm install node
+
+# pnpm
+curl -fsSL https://get.pnpm.io/install.sh | env PNPM_VERSION=9.15.5 sh -
 
 # Wasmtime
 curl https://wasmtime.dev/install.sh -sSf | bash

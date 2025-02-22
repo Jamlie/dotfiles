@@ -125,6 +125,8 @@ export PATH=$PATH:$HOME/tmux-sessionizer
 export PATH=$PATH:$HOME/.config/composer/vendor/bin
 export FLYCTL_INSTALL="/home/jam/.fly"
 export PATH="$FLYCTL_INSTALL/bin:$PATH"
+export DENO_INSTALL="/home/jam/.deno"
+export PATH="$DENO_INSTALL/bin:$PATH"
 . "$HOME/.cargo/env"
 
 export NVM_DIR="$HOME/.nvm"
@@ -150,4 +152,8 @@ export PATH="$WASMTIME_HOME/bin:$PATH"
 
 
 # Load Angular CLI autocompletion.
-source <(ng completion script)
+# source <(ng completion script)
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
