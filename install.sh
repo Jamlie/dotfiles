@@ -45,6 +45,10 @@ curl -fsSL https://get.pnpm.io/install.sh | env PNPM_VERSION=9.15.5 sh -
 # Wasmtime
 curl https://wasmtime.dev/install.sh -sSf | bash
 
+# fzf
+git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
+~/.fzf/install
+
 # Packages
 sudo apt install dos2unix -y
 sudo apt install ffmpegthumbnailer -y
@@ -56,7 +60,6 @@ sudo apt install ripgrep -y
 sudo apt install fd-find -y
 sudo apt install bat -y
 sudo apt install lsd -y
-sudo apt install fzf -y
 sudo apt install lazygit -y
 sudo apt install lua5.3 -y
 sudo apt install python3 -y
