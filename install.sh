@@ -19,8 +19,9 @@ sudo apt install curl -y
 sudo apt install coreutils -y
 
 # nvim
-curl -LO https://github.com/neovim/neovim/releases/download/v0.9.5/nvim-linux64.tar.gz
-tar -xzvf nvim-linux64.tar.gz
+curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim-linux-x86_64.tar.gz
+tar -xzvf nvim-linux-x86_64.tar.gz
+mv nvim-linux-x86_64 nvim-linux64
 
 # install Jamlie/nvim
 mv ~/.config/nvim ~/.config/nvim.bak
@@ -28,8 +29,8 @@ mv ~/.local/share/nvim ~/.local/share/nvim.bak
 git clone https://github.com/Jamlie/nvim.git ~/.config/nvim
 
 # Go
-curl -LO https://golang.org/dl/go1.23.0.linux-amd64.tar.gz
-sudo rm -rf /usr/local/go && sudo tar -C /usr/local -xzf go1.23.0.linux-amd64.tar.gz
+curl -LO https://golang.org/dl/go1.24.0.linux-amd64.tar.gz
+sudo rm -rf /usr/local/go && sudo tar -C /usr/local -xzf go1.24.0.linux-amd64.tar.gz
 
 # Rust
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
