@@ -45,9 +45,6 @@ curl -fsSL https://get.pnpm.io/install.sh | env PNPM_VERSION=9.15.5 sh -
 # Wasmtime
 curl https://wasmtime.dev/install.sh -sSf | bash
 
-# fzf
-git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
-~/.fzf/install
 
 # Packages
 sudo apt install dos2unix -y
@@ -67,6 +64,11 @@ sudo apt install python3-pip -y
 sudo apt install luarocks -y
 sudo apt install zsh -y
 sudo luarocks install luv
+
+# fzf
+git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
+~/.fzf/install
+
 go install github.com/spf13/cobra-cli@latest
 go install github.com/melkeydev/go-blueprint@latest
 go install github.com/a-h/templ/cmd/templ@latest
